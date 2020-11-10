@@ -1,0 +1,2 @@
+C:\Users\Juyoung Park\Desktop\SongCollection\x64\Debug\SongCollectionManager.exe
+C:\Users\Juyoung Park\Desktop\SongCollection\x64\Debug\SongCollectionManager.pdb
