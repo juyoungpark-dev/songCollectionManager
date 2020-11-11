@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include <string>
 #include <vector>
+#include <list>
 using namespace std;
 
 namespace sdds
@@ -17,7 +17,7 @@ namespace sdds
 		string artist;
 		string title;
 		string album;
-		double price;
+		double m_price;
 		int release_year;
 		int length; //sec
 	};
@@ -26,8 +26,14 @@ namespace sdds
 	{
 		vector<Song>songs;
 	public:
+		//part1
 		SongCollection(const char*); //custom constr
 		void display(ostream& out) const;
+		//part2
+		void sort(string);
+		void cleanAlbum();
+		bool inCollection(string s) const;
+		std::list<Song> getSongsForArtist(string)const;
 	};
 
 	std::ostream& operator<<(std::ostream& out, const Song& theSong); //free helper
